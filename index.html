@@ -11,31 +11,34 @@
         <link rel="stylesheet" href="./css/modern-normalize.min.css" />
         <link rel="stylesheet" href="./css/styles.css" />
     </head>
-    <body class="body-box">
-        <div class="header-box">
-            <header class="header-main container">
-                <nav>
-                    <ul class="title-header">
-                        <li class="header-link-name"><a class="title-name-header" href="./index.html"><span class="title-side-left">Web</span><span class="title-side-right">Studio</span></a></li>
-                        <li class="header-link active"><a class="link-active-color active-page-color-highlighting " href="./index.html">Agencja</a></li>
-                        <li class="header-link"><a class="link-active-color" href="./portfolio.html">Portfolio</a></li>
-                        <li class="header-link"><a class="link-active-color" href="">Kontakt</a></li>
-                    </ul>
-                </nav>
-                <div>
-                    
-                    <ul class="header-contacts">
-                        <li class="header-link-contact">
-                            
-                            <a class="mail-header link-active-color" href="mailto:info@devstudio.com"><svg class="icons-svg-header-mail"><use href="./images/icons.svg#icon-envelope"></use></svg>info@devstudio.com</a></li>
-                        <li class="header-link-contact">
-                            
-                            <a class="tel-header link-active-color" href="tel:+48111111111"><svg class="icons-svg-header-phone"><use href="./images/icons.svg#icon-smartphone"></use></svg>+48 111 111 111</a></li>
-                    </ul>
-                </div>
-            </header>
-        </div>
-        <main class="">
+    <body>
+        <header class="header">
+            <nav>
+                <ul class="header__pages">
+                    <li class="header__main-name">
+                        <a href="./index.html">
+                            <span class="header__title-left">Web</span>
+                            <span class="header__title-right">Studio</span></a></li>
+                    <li class="header__nav-list header__pages-list--active">
+                        <a class="header__link header__link--active" href="./index.html">Agencja</a></li>
+                    <li class="header__nav-list">
+                        <a class="header__link" href="./portfolio.html">Portfolio</a></li>
+                    <li class="header__nav-list">
+                        <a class="header__link" href="">Kontakt</a></li>
+                </ul>
+            </nav>
+            <div>
+                <ul class="header__contacts">
+                    <li class="header__contacts-list">
+                        <a class="header__contacts-link" href="mailto:info@devstudio.com">
+                            <svg class="header__icon-mail"><use href="./images/icons.svg#icon-envelope"></use></svg>info@devstudio.com</a></li>
+                    <li class="header__contacts-list">
+                        <a class="header__contacts-link" href="tel:+48111111111">
+                            <svg class="header__icon-phone"><use href="./images/icons.svg#icon-smartphone"></use></svg>+48 111 111 111</a></li>
+                </ul>
+            </div>
+        </header>
+    <main class="">
             <div class="main-top-box">
                 <section class="main-top-background main-top-background-opacity container">
                     
