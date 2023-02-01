@@ -344,6 +344,171 @@ h1, h2, h3, p {
 }
 
 /* -------------FOOTER END----------------- */
+/* -------------------MAIN START----------------- */
+
+.theme {
+    display: block;
+    background-color: var(--brand-color-background-main-top);
+}
+
+.theme__section {
+    background-image: linear-gradient(0deg,
+            rgba(47, 48, 58, 0.4) 0%,
+            rgba(47, 48, 58, 0.4) 100%),
+        url("../images/peopleonmeeting.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--brand-color-background-main-top);
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1200px;
+    margin: 0px auto;
+}
+
+.theme__label {
+    display: flex;
+    padding-top: 200px;
+    width: 696px;
+    height: 120px;
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.364;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--brand-color-main-top-text);
+}
+
+.theme__text {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.364;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--brand-color-main-top-text);
+}
+
+.theme__button {
+    display: flex;
+    align-items: center;
+    margin-top: 130px;
+    justify-content: center;
+    cursor: pointer;
+    background-color: var(--brand-color-hover);
+    box-shadow: 0px 4px 4px var(--brand-color-main-button-boxshadow);
+    border-radius: 4px;
+    border-color: var(--brand-color-hover);
+    width: 200px;
+    height: 50px;
+    color: var(--brand-color-button-mainpage);
+}
+
+.presentation {
+    display: block;
+    background-color: var(--brand-color-background);
+    padding-top: 94px;
+    padding-bottom: 94px;
+    width: 1200px;
+    margin: 0px auto;
+}
+
+.article {
+    margin-bottom: 94px;
+}
+
+.article h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1428;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.article p {
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    color: var(--brand-color-article-p);
+}
+
+.article__box {
+    display: flex;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    justify-content: center;
+    gap: 30px;
+}
+
+.article__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    background-color: var(--brand-color-main-article-box-background);
+    margin-bottom: 30px;
+}
+
+.article__images {
+    width: 70px;
+    height: 70px;
+}
+
+.domain {
+    background-color: var(--brand-color-background);
+    width: 1200px;
+    margin: 0px auto;
+}
+
+.domain h2 {
+    font-size: 36px;
+    line-height: 1.167;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.domain__box {
+    display: flex;
+    list-style: none;
+    margin-top: 50px;
+    padding: 0px;
+    justify-content: center;
+    gap: 30px;
+    max-height: 294px;
+}
+
+.domain__list {
+    position: relative;
+}
+
+.domain__picture {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.domain__label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 370px;
+    position: absolute;
+    bottom: 0px;
+    color: var(--brand-color-font-overall-2);
+    font-size: 14px;
+    text-align: center;
+    background-color: var(--color-main-central-img-text);
+}
+
+
+/* --------------------MAIN END------------------------ */
 /* --------END BEM------------ */
 
 
