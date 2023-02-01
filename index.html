@@ -334,52 +334,52 @@
         <div class="backdrop is-hidden" data-modal>
             <form class="modal">
                 <h2>Zostaw swoje dane w formularzu poniżej</h2>
-                <ul class="modal-form-container">
-                    <li class="modal-form-list">    
-                        <label class="" for="user_name_modal">Imie</label>
-                        <div class="modal-form-box modal-active">
-                            <svg class="modal-form-icon-name-svg ">
+                <ul class="modal__container">
+                    <li class="modal__list">    
+                        <label for="user_name_modal">Imie</label>
+                        <div class="modal__box">
+                            <svg class="modal__icon">
                                 <use href="./images/icons.svg#icon-name"></use>
                             </svg>
-                            <input class="modal-input" required type="text" name="user_name_modal" id="user_name_modal" />
+                            <input class="modal__input" required type="text" name="user_name_modal" id="user_name_modal" />
 
                         </div>
                     </li>
                     <li>
-                        <label class="modal-active" for="user_tel_modal">Telefon</label>
-                        <div class="modal-form-box modal-active">
-                            <svg class="modal-form-icon-tel-svg">
+                        <label class="modal__label" for="user_tel_modal">Telefon</label>
+                        <div class="modal__box">
+                            <svg class="modal__icon">
                                 <use href="./images/icons.svg#icon-tel"></use>
                             </svg>
-                            <input class="modal-input" type="tel"  name="user_tel_modal" required id="user_tel_modal" />
+                            <input class="modal__input" type="tel"  name="user_tel_modal" required id="user_tel_modal" />
                         </div>
                     </li>
                     <li>
-                        <label class="" for="user_email_modal">Email</label>
-                        <div class="modal-form-box modal-active">
-                            <svg class="modal-form-icon-email-svg">
+                        <label for="user_email_modal">Email</label>
+                        <div class="modal__box">
+                            <svg class="modal__icon">
                                 <use href="./images/icons.svg#icon-mail"></use>
                             </svg>
-                            <input class="modal-input" type="email"  name="user_email_modal" required id="user_email_modal" />
+                            <input class="modal__input" type="email"  name="user_email_modal" required id="user_email_modal" />
                         </div>
                     </li>
-                    <li class="modal-form-list">
-                        <label class="" for="user_text_modal">Komentarz</label>
-                        <div class="modal-form-box-textarea modal-active">
-                        <textarea class="modal-textarea" placeholder="Wprowadź tekst" name="user_text_modal" id="user_text_modal"></textarea>
+                    <li class="modal__list">
+                        <label for="user_text_modal">Komentarz</label>
+                        <div class="modal__textarea-box">
+                        <textarea class="modal__textarea" placeholder="Wprowadź tekst" name="user_text_modal" id="user_text_modal"></textarea>
                         </div>
                     </li>
-                    <li class="modal-checkbox">
-                        <input class="modal-checkbox-input" type="checkbox" name="user_checkbox_modal" required id="user_checkbox_modal" />
-                        <label class="modal-checkbox-label" for="user_checkbox_modal"><svg class="button-modal-checkbox-svg">
+                    <li class="modal__checkbox">
+                        <input class="modal__checkbox-input" type="checkbox" name="user_checkbox_modal" required id="user_checkbox_modal" />
+                        <label class="modal__checkbox-label" for="user_checkbox_modal"><svg class="modal__checkbox-icon">
                             <use href="./images/icons.svg#icon-approve"></use>
                         </svg></label>
-                        <span>Oświadczam iż akceptuję <a class="modal-policy-link" href="">Regulamin</a> i <a class="modal-policy-link" href="">Politykę Prywatności.</a></span>
+                        <span>Oświadczam iż akceptuję <a class="modal__link" href="">Regulamin</a> i <a class="modal__link" href="">Politykę Prywatności.</a></span>
                     </li>
                 </ul>
 
-                <button class="modal-form-button-send" type="submit">Wyślij</button>
-                <button data-modal-close class="button-modal-close" type="button"><svg class="button-modal-close-svg">
+                <button class="modal__button-send" type="submit">Wyślij</button>
+                <button class="modal__button-close" data-modal-close type="button"><svg class="modal__icon-close">
                         <use href="./images/icons.svg#icon-cross"></use>
                     </svg></button>
             </form>
