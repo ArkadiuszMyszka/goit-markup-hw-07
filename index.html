@@ -15,10 +15,9 @@
         <header class="header">
             <nav>
                 <ul class="header__pages">
-                    <li class="header__main-name">
+                    <li class="header__name">
                         <a href="./index.html">
-                            <span class="header__title-left">Web</span>
-                            <span class="header__title-right">Studio</span></a></li>
+                            <span class="title-left">Web</span><span class="title-right">Studio</span></a></li>
                     <li class="header__nav-list header__pages-list--active">
                         <a class="header__link header__link--active" href="./index.html">Agencja</a></li>
                     <li class="header__nav-list">
@@ -38,7 +37,7 @@
                 </ul>
             </div>
         </header>
-    <main class="">
+        <main class="">
             <div class="main-top-box">
                 <section class="main-top-background main-top-background-opacity container">
                     
@@ -294,42 +293,40 @@
                 </ul>
             </div>
         </main>
-        <div class="footer-box">
-            <footer class="footer-main container">
-                <ul class="footer-list">
-                    <li class="footer-link-name"><a class="title-name-footer" href="./index.html"><span class="title-side-left">Web</span><span class="title-side-right-footer">Studio</span></a></li>
-                    <li class="footer-link"><address class="address-footer">m. Warszawa, Aleje Jerozolimskie 21</address></li>
-                    <li class="footer-link"><a class="mail-footer link-active-color" href="mailto:info@example.com">info@example.com</a></li>
-                    <li class="footer-link"><a class="tel-footer link-active-color" href="tel:+48111111111">+48 111 111 111</a></li>
+        <div class="section-footer">
+            <footer class="footer">
+                <ul class="footer__contact">
+                    <li class="footer__name">
+                        <a class="footer__name-label" href="./index.html">
+                            <span class="title-left">Web</span><span class="title-right title-right--footer">Studio</span></a></li>
+                    <li><address class="footer__address">m. Warszawa, Aleje Jerozolimskie 21</address></li>
+                    <li><a class="footer__address footer__address--active" href="mailto:info@example.com">info@example.com</a></li>
+                    <li><a class="footer__address footer__address--active" href="tel:+48111111111">+48 111 111 111</a></li>
                 </ul>
-                <div class="footer-icon-box">
+                <div class="footer__container footer__container--margin">
                     <h3>DOŁĄCZ DO NAS</h3>
-                    <ul class="main-footer-list-box">
-                        <li class="main-footer-list-box-list">
-                            
-                            <a class="main-footer-list-box-link" href=""><svg class="main-footer-list-box-icon"><use href="./images/icons.svg#icon-instagram"></use></svg></a>
+                    <ul class="footer__portals">
+                        <li class="footer__portals-list">
+                            <a class="footer__portals-link" href=""><svg class="footer__icon"><use href="./images/icons.svg#icon-instagram"></use></svg></a>
                         </li>
-                        <li class="main-footer-list-box-list">
-                            
-                            <a class="main-footer-list-box-link" href=""><svg class="main-footer-list-box-icon"><use href="./images/icons.svg#icon-twitter"></use></svg></a>
+                        <li class="footer__portals-list">
+                            <a class="footer__portals-link" href=""><svg class="footer__icon"><use href="./images/icons.svg#icon-twitter"></use></svg></a>
                         </li>
-                        <li class="main-footer-list-box-list">
-                            
-                            <a class="main-footer-list-box-link" href=""><svg class="main-footer-list-box-icon"><use href="./images/icons.svg#icon-facebook"></use></svg></a>
+                        <li class="footer__portals-list">
+                            <a class="footer__portals-link" href=""><svg class="footer__icon"><use href="./images/icons.svg#icon-facebook"></use></svg></a>
                         </li>
-                        <li class="main-footer-list-box-list">
-                            
-                            <a class="main-footer-list-box-link" href=""><svg class="main-footer-list-box-icon"><use href="./images/icons.svg#icon-linkedin"></use></svg></a>
+                        <li class="footer__portals-list">
+                            <a class="footer__portals-link" href=""><svg class="footer__icon"><use href="./images/icons.svg#icon-linkedin"></use></svg></a>
                         </li>
                     </ul>
                 </div>
-                <div class="footer-form-box">
+                <div class="footer__container">
                     <h3>ZAPISZ SIĘ DO NEWSLETTERA</h3>
-                    <form class="form-footer" autocomplete="on">
+                    <form class="footer__form" autocomplete="on">
                         
-                        <label class="form-footer-label-email" for="user_email_footer"></label>
-                        <input class="form-footer-input-email" required type="email" placeholder="E-mail" name="email_footer" id="user_email_footer" />
-                        <button class="form-footer-button" type="submit" >Zapisz się <svg class="form-footer-button-svg">
+                        <label  for="user_email_footer"></label>
+                        <input class="footer__input" required type="email" placeholder="E-mail" name="email_footer" id="user_email_footer" />
+                        <button class="footer__button" type="submit" >Zapisz się <svg class="footer__button-icon">
                         <use href="./images/icons.svg#icon-send"></use></svg></button>
 
                     </form>
