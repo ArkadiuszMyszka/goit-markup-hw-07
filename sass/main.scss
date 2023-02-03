@@ -1,4 +1,4 @@
-@use "./utils/variables.scss" as * ;
+@import "./utils/variables.scss";
 
 
 body {
@@ -17,3 +17,9 @@ p {
 @import "./components/header";
 @import "./components/title";
 @import "./components/footer";
+@import "./components/theme";
+@import "./components/article";
+@import "./components/domain";
+@import "./components/team";
+@import "./components/clients";
+@import "./components/modal";

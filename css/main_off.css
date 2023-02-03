@@ -242,7 +242,7 @@ p {
 }
 .footer__portals-list {
   list-style: none;
-  --color3: #FFFFFF;
+  --color3: $brand-color-background-overall;
 }
 .footer__portals-link {
   fill: rgba(255, 255, 255, 0.1);
@@ -608,7 +608,7 @@ p {
   display: flex;
 }
 .team__media-list:hover, .team__media-list:focus-within {
-  --color3: #FFFFFF;
+  --color3: $brand-color-background-overall;
 }
 .team__link {
   fill: rgba(255, 255, 255, 0.1);
@@ -668,7 +668,7 @@ p {
 .clients__list:hover, .clients__list:focus-within {
   border: 1px solid #2196F3;
   border-radius: 4px;
-  --color3: #2196F3;
+  --color3: $brand-color-hover;
 }
 .clients__link {
   display: -webkit-box;
@@ -736,7 +736,7 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #757575;
+  color: var(--color-modal-font);
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -748,7 +748,7 @@ p {
   position: absolute;
   top: 50%;
   left: 50%;
-  background-color: #FFFFFF;
+  background-color: var(--brand-color-background-overall);
   position: fixed;
   z-index: 2;
   -webkit-transition-property: visiblity, opacity, -webkit-transform;
@@ -770,14 +770,17 @@ p {
   border-radius: 4px;
   font-size: 12px;
 }
+
 .modal__container {
   width: 100%;
   list-style: none;
   padding-left: 0px;
 }
+
 .modal__container li {
   margin-bottom: 10px;
 }
+
 .modal__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -787,6 +790,7 @@ p {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+
 .modal__box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -805,23 +809,30 @@ p {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal__box:hover, .modal__box:focus-within {
-  color: #2196F3;
-  border-color: #2196F3;
+
+.modal__box:hover,
+.modal__box:focus-within {
+  color: var(--brand-color-hover);
+  border-color: var(--brand-color-hover);
 }
+
 .modal__box::after {
-  fill: #2196F3;
+  fill: var(--brand-color-hover);
 }
-.modal__box:hover svg, .modal__box:focus-within svg {
-  fill: #2196F3;
+
+.modal__box:hover svg,
+.modal__box:focus-within svg {
+  fill: var(--brand-color-hover);
 }
+
 .modal__icon {
   width: 18px;
   height: 18px;
-  fill: #212121;
+  fill: var(--color-modal-form-icon);
   margin-left: 15px;
   margin-right: 15px;
 }
+
 .modal__input {
   display: block;
   border: none;
@@ -832,6 +843,7 @@ p {
   margin-right: 15px;
   outline: none;
 }
+
 .modal__label {
   -webkit-transition-property: color, fill, border-color;
   transition-property: color, fill, border-color;
@@ -840,16 +852,22 @@ p {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal__label:hover, .modal__label:focus-within {
-  color: #2196F3;
-  border-color: #2196F3;
+
+.modal__label:hover,
+.modal__label:focus-within {
+  color: var(--brand-color-hover);
+  border-color: var(--brand-color-hover);
 }
+
 .modal__label::after {
-  fill: #2196F3;
+  fill: var(--brand-color-hover);
 }
-.modal__label:hover svg, .modal__label:focus-within svg {
-  fill: #2196F3;
+
+.modal__label:hover svg,
+.modal__label:focus-within svg {
+  fill: var(--brand-color-hover);
 }
+
 .modal__textarea-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -870,9 +888,12 @@ p {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal__textarea-box:hover, .modal__textarea-box:focus-within {
-  border-color: #2196F3;
+
+.modal__textarea-box:hover,
+.modal__textarea-box:focus-within {
+  border-color: var(--brand-color-hover);
 }
+
 .modal__textarea {
   width: 100%;
   height: 100%;
@@ -882,6 +903,7 @@ p {
   outline: none;
   border: none;
 }
+
 .modal__checkbox {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -891,20 +913,24 @@ p {
           justify-content: center;
   font-size: 14px;
 }
+
 .modal__checkbox-input {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
 }
+
 .modal__checkbox-input:checked + .modal__checkbox-label::before {
   background: none;
   border: none;
 }
+
 .modal__checkbox-label {
   margin-right: 8px;
   cursor: pointer;
-  fill: #212121;
+  fill: var(--brand-color-font-overall);
 }
+
 .modal__checkbox-label::before {
   display: block;
   position: absolute;
@@ -917,10 +943,11 @@ p {
   content: "";
   width: 16px;
   height: 15px;
-  border: 2px solid #212121;
+  border: 2px solid var(--brand-color-font-overall);
   border-radius: 2px;
-  background-color: #FFFFFF;
+  background-color: var(--brand-color-background-overall);
 }
+
 .modal__checkbox-icon {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -928,7 +955,7 @@ p {
   width: 16px;
   height: 15px;
   border-radius: 2px;
-  fill: #FFFFFF;
+  fill: var(--brand-color-background-overall);
   padding: 0px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -936,14 +963,16 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #2196F3;
+  background-color: var(--brand-color-hover);
 }
+
 .modal__link {
-  color: #2196F3;
+  color: var(--brand-color-hover);
 }
+
 .modal__button-send {
   font-size: 16px;
-  color: #FFFFFF;
+  color: var(--brand-color-font-overall-2);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -956,7 +985,7 @@ p {
           justify-content: center;
   height: 50px;
   width: 200px;
-  background-color: #2196F3;
+  background-color: var(--brand-color-hover);
   border: none;
   outline: none;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -964,9 +993,12 @@ p {
   border-radius: 4px;
   cursor: pointer;
 }
-.modal__button-send:hover, .modal__button-send:focus {
-  background-color: #268d19;
+
+.modal__button-send:hover,
+.modal__button-send:focus {
+  background-color: var(--brand-color-hover-2);
 }
+
 .modal__button-close {
   position: absolute;
   display: -webkit-box;
@@ -984,23 +1016,27 @@ p {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: #FFFFFF;
+  background: var(--brand-color-background-overall);
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
-.modal__button-close:hover, .modal__button-close:focus {
-  background-color: #268d19;
+
+.modal__button-close:hover,
+.modal__button-close:focus {
+  background-color: var(--brand-color-hover-2);
 }
+
 .modal__icon-close {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  fill: #000000;
+  fill: var(--color-modal-cross);
   width: 11px;
   height: 11px;
   right: 0px;
 }
+
 .modal h2 {
   font-size: 20px;
   text-align: center;
-  color: #212121;
+  color: var(--brand-color-font-overall);
 }/*# sourceMappingURL=main.css.map */
