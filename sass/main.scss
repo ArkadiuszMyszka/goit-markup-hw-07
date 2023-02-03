@@ -1,8 +1,8 @@
-@import "./utils/variables.scss";
+@use "./utils/variables" as *;
 
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: $overall-fonts;
     background: $brand-color-background-overall;
     color: $brand-color-font-overall;
 }
