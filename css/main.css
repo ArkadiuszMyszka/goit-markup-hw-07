@@ -141,7 +141,10 @@ p {
   cursor: pointer;
 }
 
-.title-left {
+.title {
+  text-decoration: none;
+}
+.title__left {
   font-family: "Raleway", sans-serif;
   color: #2196F3;
   font-size: 26px;
@@ -149,18 +152,17 @@ p {
   line-height: 1.1738;
   letter-spacing: 3%;
 }
-
-.title-right {
+.title__right {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   font-weight: 400;
   line-height: 1.383;
   letter-spacing: 3%;
 }
-.title-right--header {
+.title__right--header {
   color: #000;
 }
-.title-right--footer {
+.title__right--footer {
   color: #FFFFFF;
 }
 
@@ -193,9 +195,6 @@ p {
 }
 .footer__name {
   margin-bottom: 20px;
-}
-.footer__name-label {
-  text-decoration: none;
 }
 .footer__address {
   font-size: 14px;
