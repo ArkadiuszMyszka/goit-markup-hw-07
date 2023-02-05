@@ -1,10 +1,8 @@
 .presentation {
     display: block;
     background-color: $brand-color-background;
-    padding-top: 94px;
-    padding-bottom: 94px;
-    width: 1200px;
-    margin: 0px auto;
+    @include common.container;
+    @include common.section;
 }
 
 .article {
@@ -34,9 +32,7 @@
         }
     
         &__list {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include common.display;
             width: 270px;
             height: 120px;
             background-color: $brand-color-main-article-box-background;

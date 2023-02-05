@@ -7,8 +7,7 @@
     max-width: 370px;
     cursor: pointer;
     transition-property: box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include common.transition;
     &__figcaption {
             padding: 20px 24px;
             border-right: $brand-color-portfolio-central-border;
@@ -67,16 +66,13 @@
                     background-color: $brand-color-portfolio-central-overlay;
                     transform: translateY(101%);
                     transition-property: box-shadow transform;
-                    transition-duration: 250ms;
-                    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+                    @include common.transition;
                 }
         
                 &__text {
                     margin: 0px;
                     font-weight: 400;
-                    display: flex;
-                    align-items: center;
-                    justify-items: center;
+                    @include common.display;
                     letter-spacing: 0.03em;
                     color: $brand-color-font-overall-2;
                     font-size: 18px;

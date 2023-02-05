@@ -6,8 +6,7 @@
 .footer {
     display: flex;
     background-color: $brand-color-background-footer;
-    width: 1200px;
-    margin: 0px auto;
+    @include common.container;
     &__contact {
             list-style: none;
             padding-top: 60px;
@@ -33,8 +32,7 @@
         text-decoration: none;
         &--active {
                 transition-property: color;
-                transition-duration: 250ms;
-                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+                @include common.transition;
             }
         &--active:hover,
         &--active:focus-within {
@@ -59,9 +57,7 @@
    
 
     &__portals {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include common.display;
         padding-left: 0px;
         gap: 10px;
         margin: 0px;
@@ -75,8 +71,7 @@
     &__portals-link {
         fill: $brand-color-footer-icons-background;
         transition-property: fill;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include common.transition;
         &:hover,
             &:focus {
                 fill: $brand-color-hover;
@@ -95,8 +90,7 @@
     &__form {
         display: flex;
         transition-property: background-color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @include common.transition;
     }
 
     &__input {
@@ -129,8 +123,7 @@
         padding-right: 0px;
         border: none;
         transition-property: background-color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @include common.transition;
         &:hover,
             &:focus {
                 background-color: $brand-color-hover-2;

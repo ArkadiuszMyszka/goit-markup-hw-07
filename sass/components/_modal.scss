@@ -71,10 +71,7 @@
             height: 40px;
             margin-top: 4px;
             transition-property: color, fill, border-color;
-            transition-duration: 250ms, 250ms, 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
-    
+            @include common.transition;
             &:hover,
             &:focus-within {
                 color: $brand-color-hover;
@@ -114,9 +111,7 @@
     
         &__label {
             transition-property: color, fill, border-color;
-            transition-duration: 250ms, 250ms, 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
-    
+            @include common.transition;
             &:hover,
             &:focus-within {
                 color: $brand-color-hover;
@@ -145,8 +140,7 @@
             width: 100%;
             margin-top: 4px;
             transition-property: border-color;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            @include common.transition;
     
             &:hover,
             &:focus-within {
@@ -205,14 +199,13 @@
     
     
         &__checkbox-icon {
-            display: flex;
+            @include common.display;
             width: 16px;
             height: 15px;
             border-radius: 2px;
             fill: $brand-color-background-overall;
             padding: 0px;
-            align-items: center;
-            justify-content: center;
+            
             background-color: $brand-color-hover;
         }
     
@@ -224,9 +217,7 @@
             font-size: 16px;
             color: $brand-color-font-overall-2;
             display: flex;
-            align-items: center;
-            text-align: center;
-            justify-content: center;
+            @include common.display;
             height: 50px;
             width: 200px;
             background-color: $brand-color-hover;
@@ -246,9 +237,7 @@
     
         &__button-close {
             position: absolute;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include common.display;
             cursor: pointer;
             top: 8px;
             right: 8px;

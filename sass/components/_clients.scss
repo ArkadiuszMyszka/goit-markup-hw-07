@@ -2,10 +2,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 1200px;
-    margin: 0px auto;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    @include common.container;
+    @include common.section;
     & h2 {
             margin-bottom: 50px;
             font-size: 36px;
@@ -37,8 +35,7 @@
             display: flex;
             fill: $brand-color-svg-clients;
             transition-property: color, fill;
-            transition-duration: 250ms, 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
+            @include common.transition;
             &:hover,
                 &:focus {
                     fill: $brand-color-hover;

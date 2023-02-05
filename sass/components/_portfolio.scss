@@ -1,8 +1,6 @@
 .portfolio {
-    padding-top: 94px;
-    padding-bottom: 94px;
-    width: 1200px;
-    margin: 0px auto;
+@include common.container;
+@include common.section;
     margin-bottom: 50px;
     &__button-box {
             display: flex;
@@ -25,8 +23,7 @@
             text-align: center;
             letter-spacing: 0.03em;
             transition-property: color, background-color, box-shadow, border-radius;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            @include common.transition;
             &:hover,
                 &:focus {
                     background-color: $brand-color-hover;

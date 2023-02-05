@@ -1,7 +1,6 @@
 .domain {
     background-color: $brand-color-background;
-    width: 1200px;
-    margin: 0px auto;
+    @include common.container;
     & h2 {
             font-size: 36px;
             line-height: 1.167;
@@ -30,9 +29,7 @@
         }
     
         &__label {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include common.display;
             height: 70px;
             width: 370px;
             position: absolute;

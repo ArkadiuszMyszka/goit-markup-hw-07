@@ -1,5 +1,5 @@
 @use "./utils/variables" as *;
-
+@use "./utils/common";
 
 body {
     font-family: $overall-fonts;

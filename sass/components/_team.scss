@@ -1,8 +1,7 @@
 .team {
     display: block;
     background-color: $brand-color-main-bottom-background;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    @include common.section;
     &__section {
             display: flex;
             flex-direction: column;
@@ -64,9 +63,7 @@
         }
     
         &__media {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include common.display;
             padding-bottom: 30px;
             padding-left: 0px;
             gap: 10px;
@@ -85,8 +82,7 @@
         &__link {
             fill: $brand-color-footer-icons-background;
             transition-property: color, fill;
-            transition-duration: 250ms, 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
+            @include common.transition;
             &:hover,
                 &:focus {
                     fill: $brand-color-hover;

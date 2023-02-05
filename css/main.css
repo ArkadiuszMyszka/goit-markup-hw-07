@@ -104,11 +104,11 @@ p {
   color: #757575;
   -webkit-transition-property: color, fill;
   transition-property: color, fill;
-  -webkit-transition-duration: 250ms, 250ms;
-          transition-duration: 250ms, 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
   fill: #757575;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__contacts-link:hover, .header__contacts-link:focus-within {
   color: #2196F3;
@@ -389,10 +389,10 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 130px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 130px;
   cursor: pointer;
   background-color: #2196F3;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -407,10 +407,10 @@ p {
 .presentation {
   display: block;
   background-color: #FFFFFF;
-  padding-top: 94px;
-  padding-bottom: 94px;
   width: 1200px;
   margin: 0px auto;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .article {
@@ -613,10 +613,10 @@ p {
   fill: rgba(255, 255, 255, 0.1);
   -webkit-transition-property: color, fill;
   transition-property: color, fill;
-  -webkit-transition-duration: 250ms, 250ms;
-          transition-duration: 250ms, 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team__link:hover, .team__link:focus {
   fill: #2196F3;
@@ -676,10 +676,10 @@ p {
   fill: #afb1b8;
   -webkit-transition-property: color, fill;
   transition-property: color, fill;
-  -webkit-transition-duration: 250ms, 250ms;
-          transition-duration: 250ms, 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients__link:hover, .clients__link:focus {
   fill: #2196F3;
@@ -800,11 +800,10 @@ p {
   margin-top: 4px;
   -webkit-transition-property: color, fill, border-color;
   transition-property: color, fill, border-color;
-  -webkit-transition-duration: 250ms, 250ms, 250ms;
-          transition-duration: 250ms, 250ms, 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   color: #2196F3;
 }
 .modal__box:hover, .modal__box:focus-within {
@@ -837,10 +836,10 @@ p {
 .modal__label {
   -webkit-transition-property: color, fill, border-color;
   transition-property: color, fill, border-color;
-  -webkit-transition-duration: 250ms, 250ms, 250ms;
-          transition-duration: 250ms, 250ms, 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__label:hover, .modal__label:focus-within {
   color: #2196F3;
@@ -927,17 +926,17 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 16px;
-  height: 15px;
-  border-radius: 2px;
-  fill: #FFFFFF;
-  padding: 0px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 16px;
+  height: 15px;
+  border-radius: 2px;
+  fill: #FFFFFF;
+  padding: 0px;
   background-color: #2196F3;
 }
 .modal__link {
@@ -949,10 +948,10 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1008,10 +1007,10 @@ p {
 }
 
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
   width: 1200px;
   margin: 0px auto;
+  padding-top: 94px;
+  padding-bottom: 94px;
   margin-bottom: 50px;
 }
 .portfolio__button-box {
@@ -1158,7 +1157,9 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  justify-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   letter-spacing: 0.03em;
   color: #FFFFFF;
   font-size: 18px;

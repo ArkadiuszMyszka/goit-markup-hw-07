@@ -5,8 +5,7 @@
     align-items: center;
     height: 80px;
     border-bottom: 1px solid $brand-color-header-border;
-    width: 1200px;
-    margin: 0px auto;
+    @include common.container;
 
     &__name {
             margin-right: 93px;
@@ -40,8 +39,7 @@
     }
     &__link {
         transition-property: color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @include common.transition;
         &--active {
                 color: $brand-color-hover;
             }
@@ -70,10 +68,8 @@
                     letter-spacing: 0.02em;
                     color: $brand-color-contact-header;
                     transition-property: color, fill;
-                    transition-duration: 250ms, 250ms;
-                    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
                     fill: $brand-color-svg;
-
+                    @include common.transition;
                     &:hover,
                         &:focus-within {
                             color: $brand-color-hover;
